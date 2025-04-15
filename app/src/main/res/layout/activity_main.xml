@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/secondary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/meu_toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Estudantes"
+        android:textColor="@color/textColor"
+        android:textSize="30sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_view"
+        android:layout_margin="25dp"
+        android:background="@color/secondary"
+        android:elevation="6dp"
+        android:divider="@color/primary"
+        android:dividerHeight="2dp"
+        />
+</LinearLayout>
